@@ -13,22 +13,20 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-    proxy: process.env.NODE_ENV === 'development' ? {
+    proxy: {
       '/api': {
         target: 'http://localhost:8080',
-        changeOrigin: true
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
       }
-    } : undefined
+    }
   },
   build: {
     outDir: 'dist',
     sourcemap: false,
-    // 生产环境移除 console
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
+    rollupOptions: {
+      input: {
+        main: fileURLToPath(new URL('./index.html', import.meta.url))
       }
     }
   }
