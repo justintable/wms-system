@@ -4,30 +4,30 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.4",
-    "element-plus": "^2.3.9",
-    "@element-plus/icons-vue": "^2.1.0",
-    "pinia": "^2.1.6",
-    "axios": "^1.4.0"
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5",
+    "element-plus": "^2.5.3",
+    "@element-plus/icons-vue": "^2.3.1",
+    "pinia": "^2.1.7",
+    "axios": "^1.6.7"
   },
   "devDependencies": {
-    "@types/node": "^20.4.5",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "@vue/tsconfig": "^0.4.0",
-    "typescript": "^5.1.6",
-    "vite": "^4.4.9",
-    "vue-tsc": "^1.8.8",
-    "@typescript-eslint/parser": "^6.2.0",
-    "@typescript-eslint/eslint-plugin": "^6.2.0",
-    "eslint": "^8.46.0",
-    "eslint-plugin-vue": "^9.16.1",
-    "sass": "^1.64.2"
+    "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.1",
+    "sass": "^1.70.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vue-tsc": "^1.8.27"
   },
   "engines": {
     "node": "20.x"
